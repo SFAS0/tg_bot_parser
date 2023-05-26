@@ -44,16 +44,13 @@ def receive_update():
 
 @scheduler.task("interval", id="daily_report", seconds=30, misfire_grace_time=30)
 def send_daily_report():
-    proxies = {
-        'https': 'socks5://198.50.217.202:1080'
-    }
     if int(datetime.now().time().hour) == 10 and int(datetime.now().time().minute) == 00:
         last_weeks_posts = {}
         date_week_later = (datetime.today() - timedelta(days=7)).strftime('%Y %m %d')
         for group in name_group.keys():
             response = requests.get('https://api.vk.com/method/wall.get', params={'access_token': token_vk,
                                                                                   'v': 5.91, 'domain': group,
-                                                                                  'count': 100}, proxies=proxies)
+                                                                                  'count': 100})
             data = response.json()
             for post in data['response']['items']:
                 date = datetime.utcfromtimestamp(int(post['date'])).strftime('%Y %m %d')
