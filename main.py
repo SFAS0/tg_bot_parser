@@ -2,7 +2,7 @@ from flask_apscheduler import APScheduler
 from flask import Flask
 from datetime import datetime, timedelta
 from data import db_session
-from config_my import token_vk, TOKEN, chat_id, name_group
+from config import token_vk, TOKEN, chat_id, name_group
 from data.posts import Posts
 import requests
 
