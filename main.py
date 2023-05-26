@@ -2,7 +2,7 @@ from vk_api.longpoll import VkLongPoll, VkEventType
 from flask_apscheduler import APScheduler
 from flask import Flask
 from datetime import datetime, timedelta
-from config_my import token_vk, TOKEN, chat_id, name_group
+from config import token_vk, TOKEN, chat_id, name_group
 import requests
 import vk_api
 import threading
