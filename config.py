@@ -1,6 +1,7 @@
-TOKEN = ''  # токен бота
-token_vk = ''  # токен вк для парсинга
-chat_id = ''  # chat id группы или лс
+TOKEN = '5163628185:AAEBk7jJjZk0iacDVmDDUEUiN28OSM5ZTWk'  # токен бота
+token_vk = '400f6110400f6110400f611088431b5a544400f400f61102460286b1cff8d14840103d1'  # токен вк для парсинга
+chat_id = '-692631910'  # chat id
+
 # список групп c токенами
 name_group = {'englishhouse35': ('English House - Английский язык', 'vk1.a.9WcAFsns-8NsO34YsP8EjfgQSfayQTaboM2VdssqGN6'
                                                                     '_CCNa6_8PUw9cuyRzJRrq9qID78Re1ELOPhbmQGyKSEO726sL'
@@ -20,5 +21,8 @@ name_group = {'englishhouse35': ('English House - Английский язык'
                                                                                   'fQVIpw05Lwf7BNKnMUKGeqabO1UBDn1Xfzx'
                                                                                   'VfV6HcjiZNnmJQhsITrkLG7gS43-rDH6orSZ'
                                                                                   'usB9hMRt8988pujRHepDJHtL1BPCyQUtge1u'
-                                                                                  'z2XuZA')}
-
+                                                                                  'z2XuZA'),
+              'club219805374': ('Марс', 'vk1.a.LkVsbnGwqxrsxQaih0U2Vv5YZETggnL-7j7CVe__59Xb0IEAl4jqgtLaMxUZF16WOuRKkbf'
+                                        'dHYRB_qZVkl30hOrRo6VVzTuUh_waqN6Pq6LYrbhWy2m6r292BnqfpgHUgBaboBNU2q0a7sPwhLzL'
+                                        'sLhhrgeVdOi5fE9LYHprtr6OqYcJkFHl9L0MMTILYjstFjaspA6cx40HmsNvMU0kWg')
+              }

@@ -44,7 +44,7 @@ def receive_update():
 
 @scheduler.task("interval", id="daily_report", seconds=30, misfire_grace_time=30)
 def send_daily_report():
-    if int(datetime.now().time().hour) == 10 and int(datetime.now().time().minute) == 00:
+    if int(datetime.now().time().hour) == 10 and int(datetime.now().time().minute) == 0:
         last_weeks_posts = {}
         date_week_later = (datetime.today() - timedelta(days=7)).strftime('%Y %m %d')
         for group in name_group.keys():
